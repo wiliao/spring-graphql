@@ -1,0 +1,7 @@
+{
+  "filter": {
+    "continent": {
+      "eq": "continentCode"
+    }
+  }
+}

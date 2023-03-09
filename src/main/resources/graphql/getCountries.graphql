@@ -1,0 +1,7 @@
+
+query ($filter: CountryFilterInput) {
+  countries(filter: $filter) {
+    code
+  }
+}
+

@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: "takehome"
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: ${mockwebserver.url}/.well-known/jwks.json
+
+graphql:
+  server:
+    url: "https://countries.trevorblades.com/"
+    rate-limit:
+      count: 2
+      period: 20 #time unit is second
+    rate-limit-authenticated:
+      count: 3
+      period: 60 #time unit is second
+
+logging:
+  level:
+    org.springframework: WARN
+    com.example.takehome: WARN
