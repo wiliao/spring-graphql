@@ -19,5 +19,5 @@ graphql:
 
 logging:
   level:
-    org.springframework: WARN
-    com.example.takehome: WARN
+    org.springframework: DEBUG
+    com.example.takehome: DEBUG
